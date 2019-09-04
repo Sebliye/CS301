@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="Utf-8">
+<title>
+    star sign
+</title>
+<script>
+    // defining table
+    // Input: name of the user
+    // process: create an input filled with the scripture.
+    // output: Apply scripture
+    function zodiac(){
+        let zodiacName=document.getElementById("zname").value;
+        let dailyZodiac="Hello," + zodiacName  + " It is a beautiful day today go out and shine."+  
+        "There is a high chance of you meeting new people.You have so much  energy. Please use your time effectively today."+ 
+        "you can accomplish a lot of task with in a short period of time.Go out and smile. Enjoy your day.";
+        let printZodiac=document.getElementById("outputdiv").innerHTML=dailyZodiac;
+    }
+
+</script>
+</head>
+<body>
+    Please enter your Zodiac name:<input type="text" id="zname">
+    <button onclick="zodiac()">Zodiac Sign</button>
+    <div id="outputdiv"></div>
+</body>
+</html>

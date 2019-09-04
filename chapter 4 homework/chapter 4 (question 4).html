@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title> title</title>
+        <script>
+            function concatenate(){
+                let fname=document.getElementById("first").value;
+                let str=document.getElementById("second").value;
+                let ci=document.getElementById("third").value;
+                let sta=document.getElementById("four").value;
+                let zip=document.getElementById("five").value;
+                let display=document.getElementById("outputdiv").innerHTML=fname + "<br>" + str + "<br>" + ci + "," +
+                 sta + " " + zip;
+
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+        
+            Fullname: <input type="text" id="first"><br> <br>
+            street:   <input type="text" id="second"> <br> <br>
+            city:     <input type="text" id="third"><br> <br>
+            state:    <input type="text" id="four">
+            zipcode:  <input type="text" id="five">
+            <button onclick="concatenate()"> Make Address</button>
+            <div id="outputdiv"> </div>
+    
+    </body>
+</html>

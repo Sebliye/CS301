@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title> Text field</title>
+        <script>
+            function join(){
+                document.getElementById("outputdiv").innerHTML=document.getElementById("first").value + " " +
+                document.getElementById("second").value;
+            }
+
+            
+        </script>
+        
+    </head>
+    <body>
+        <h1>create Joint words </h1>
+        First word:<input id="first" type="text"><br><br>
+        Second word:<input id="second" type="text"><br><br>
+        <button id="click" onclick="join()"> Join the words </button>
+        <div id="outputdiv"></div> 
+    </body>
+</html
